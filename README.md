@@ -24,9 +24,15 @@ Generating Gifs: `python generate.py --frames=10 --name="foo.gif"`
 
 Disclaimer: It's in Tensorflow right now, but I will port everything to pytorch soon
 
-## Findings
+## Experiments
 * I found the `--scale` and `--z-dim` parameter to have the most impact of visual effects.
 * In general, the scale acts as a "zooming" parameter the image space, and the z dimension acts a frequency parameter of the image features
+
+<p float="left">
+  <img src="/tanhtanh_1.png" width="100" />
+  <img src="/img2.png" width="100" /> 
+  <img src="/img3.png" width="100" />
+</p>
 
 ## Acknowledgement
 
