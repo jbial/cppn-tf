@@ -21,24 +21,29 @@ def show_image(image):
     plt.axis('off')
     plt.show()
 
-def show_images(images, num_images):
+def show_images(images, cols):
     """Show sampled images
     """
-    fig, axes = plt.subplots(num_images, num_images)
-    indices = np.random.choice(images.shape[0], 
-                    (num_images, num_images), replace=False)
-    for i, row_inds in zip(axes, indices):
-            for j, inds in zip(i, row_inds):
-                j.set_axis_off()
-                j.imshow(images[inds])
+    rows = np.ceil(len(images)/cols).astype(int)
+    fig, axes = plt.subplots(rows, cols)
+
+    if rows == 1: axes = [axes]
+
+    fig.subplots_adjust(hspace=0, wspace=0)
+    for i, ax_x in enumerate(axes):
+        for j, ax_j in enumerate(ax_x):
+            try:
+                ax_j.axis('off')
+                ax_j.imshow(images[j+i*cols])
+            except: 
+                ax_j.axis('off')
+            ax_j.set_aspect('auto')
     plt.show()
 
 def save_image(image, name, path='images/'):
     """Save generated images
     """
-    im = np.uint8(255 * image)
-    im = Image.fromarray(im)
-    im.save(path + name)
+    to_image(image).save(path + name)
 
 def save_images(images, name):
     """Save a batch of generated images
