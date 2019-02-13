@@ -27,6 +27,8 @@ Generating Gifs: `python generate.py --frames=10 --name="foo.gif"`
 * I found the `--scale` and `--z-dim` parameter to have the most impact of visual effects.
 * In general, the scale acts as a "zooming" parameter in the image space, and the z dimension acts a frequency parameter of generated image features
 
+
+The effect of exponentially increasing the scale parameter: `--scale-list=1,5,25,125`
 <p float="left">
   <img src="https://github.com/jbial/cppn-pytorch/blob/master/images/scale_1.jpg" width="200" />
   <img src="https://github.com/jbial/cppn-pytorch/blob/master/images/scale_2.jpg" width="200" /> 
