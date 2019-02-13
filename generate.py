@@ -36,7 +36,7 @@ def main():
     images = model()
     if args.batch_size > 1:
         vis.show_images(model(), np.sqrt(images.shape[0]).astype(int))
-        if args.name: vis.save_images(images)
+        if args.name: vis.save_images(images, args.name)
     else:
         vis.show_image(model())
         if args.name: vis.save_image(images, args.name)

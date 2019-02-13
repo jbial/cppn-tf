@@ -3,7 +3,6 @@ import numpy as np
 import glob
 import os
 from PIL import Image
-from datetime import datetime
 
 #######################################
 ## Methods for CPPN visualization
@@ -41,12 +40,12 @@ def save_image(image, name, path='images/'):
     im = Image.fromarray(im)
     im.save(path + name)
 
-def save_images(images):
+def save_images(images, name):
     """Save a batch of generated images
     """
     for i, im in enumerate(images):
-        save_image(im, 
-        'img-{0}-{1}.png'.format(datetime.now().strftime('%d-%M-%S'), i))
+        file_name = name.split('.')
+        save_image(im, "{0}_{1}.{2}".format(file_name[0], i+1, file_name[1])) 
 
 def to_image(image):
     """Converts numpy to PIL
