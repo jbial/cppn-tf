@@ -21,7 +21,7 @@ Generating Images: `python generate.py`
 
 ![alt text](https://github.com/jbial/cppn-pytorch/blob/master/images/tanhtanh_2.png)
 
-Generating Gifs: `python generate.py --frames=10 --name="foo.gif"`
+Generating Gifs: `python generate.py --frames=10 --name="tanhtanh.gif"`
 
 ![alt text](https://github.com/jbial/cppn-pytorch/blob/master/gifs/tanhtanh.gif)
 
