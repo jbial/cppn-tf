@@ -28,9 +28,10 @@ Generating Gifs: `python generate.py --frames=10 --name="foo.gif"`
 * In general, the scale acts as a "zooming" parameter in the image space, and the z dimension acts a frequency parameter of generated image features
 
 <p float="left">
-  <img src="https://github.com/jbial/cppn-pytorch/blob/master/images/tanhtanh_3.png" width="256" />
-  <img src="https://github.com/jbial/cppn-pytorch/blob/master/images/tanhtanh_2.png" width="256" /> 
-  <img src="https://github.com/jbial/cppn-pytorch/blob/master/images/tanhtanh_2.png" width="256" />
+  <img src="https://github.com/jbial/cppn-pytorch/blob/master/images/scale_1.png" width="128" />
+  <img src="https://github.com/jbial/cppn-pytorch/blob/master/images/scale_2.png" width="128" /> 
+  <img src="https://github.com/jbial/cppn-pytorch/blob/master/images/scale_3.png" width="128" />
+  <img src="https://github.com/jbial/cppn-pytorch/blob/master/images/scale_4.png" width="128" />
 </p>
 
 ## Acknowledgement
