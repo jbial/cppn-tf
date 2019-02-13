@@ -1,5 +1,5 @@
 # Compositional Pattern Producing Networks in Pytorch
-Generate intensely stimulating images with random neural networks.
+Generate high resolution, intensely stimulating images with random neural networks.
 
 ## Arguments
 `python generate.py` takes as arguments:
