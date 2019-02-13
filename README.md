@@ -20,7 +20,7 @@ Generating Images: `python generate.py`
 
 Generating Gifs: `python generate.py --frames=10 --name="foo.gif"`
 
-![alt text](https://github.com/jbial/cppn-pytorch/blob/master/gifs/trip16.gif)
+![alt text](https://github.com/jbial/cppn-pytorch/blob/master/gifs/tanhtanh.gif)
 
 Disclaimer: It's in Tensorflow right now, but I will port everything to pytorch soon
 
