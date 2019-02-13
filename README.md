@@ -1,5 +1,5 @@
 # Compositional Pattern Producing Networks in Pytorch
-Generate intensely stimulating images and gifs with random neural networks adapted from David Ha's blog post ().
+Generate intensely stimulating images with random neural networks adapted from [David Ha's blog post](http://blog.otoro.net/2016/03/25/generating-abstract-patterns-with-tensorflow/).
 
 ## Arguments
 `python generate.py` takes as arguments:
