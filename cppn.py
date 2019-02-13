@@ -37,8 +37,6 @@ class CPPN:
         """Foward pass to produce an image
         """        
 
-#        tf.get_variable_scope().reuse_variables()
-        
         # Preprocessing layer
         z_scaled = tf.reshape(self.z, [self.batch_size, 1, self.z_dim]) * \
         self.scale * tf.ones([self.num_pixels, 1], dtype=tf.float32)
@@ -48,9 +46,9 @@ class CPPN:
         r_input = tf.reshape(self.r, [self.batch_size * self.num_pixels, 1])
 
         # Forward pass
-        h = tf.nn.tanh(self.dense_x(x_input) + self.dense_y(y_input) + self.dense_z(z_input) + self.dense_r(r_input))
+        h = tf.nn.softplus(self.dense_x(x_input) + self.dense_y(y_input) + self.dense_z(z_input) + self.dense_r(r_input))
         for i in range(self.layers):
-            h = tf.nn.tanh(self._dense(self.n_dim, f'h_{i}')(h))
+            h = tf.tanh(self._dense(self.n_dim, f'h_{i}')(h))
         h = tf.nn.sigmoid(self._dense(self.channels, 'out')(h)) 
         return tf.reshape(h, [self.batch_size, self.im_size, self.im_size, self.channels])
 
@@ -87,5 +85,5 @@ class CPPN:
         x, y, r = self._get_coords()
 
         images = self.sess.run(generator, feed_dict={self.z: latent_code, self.x: x, self.y: y, self.r: r})
-        return images
+        return images.squeeze()
 

@@ -1,6 +1,5 @@
 import matplotlib.pyplot as plt
 import numpy as np
-import images2gif
 import glob
 import os
 from PIL import Image
@@ -63,7 +62,6 @@ def clear_image_dir():
 def generate_gif(model, frames, size, name, distribution='normal'):
     """Generate an interpolation gif
     """
-    im_path = 'gifs/gif_imgs/'
 
     # Get interpolation information
     z1, z2 = get_zs(size, distribution)
@@ -71,7 +69,7 @@ def generate_gif(model, frames, size, name, distribution='normal'):
     interp = lambda a: (1-a) * z1 + a * z2    
 
     # Store the interpolated images
-    images = [to_image(model(latent_code=interp(l))[0]) for l in coeff]
+    images = [to_image(model(latent_code=interp(l))) for l in coeff]
     
     # append the reverse sequence
     images += images[::-1][1:]
@@ -79,4 +77,5 @@ def generate_gif(model, frames, size, name, distribution='normal'):
         
     # Write to GIF
     print("Writing images to gif")
-    images2gif.writeGif('gifs/'+name, images, duration=durations)
+    images[0].save('./gifs/' + name, save_all=True, append_images=images[1:],
+                    duration=durations, loop=0) 
