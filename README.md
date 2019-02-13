@@ -1,5 +1,5 @@
 # Compositional Pattern Producing Networks in Pytorch
-Generate intensely stimulating images with random neural networks adapted from [David Ha's blog post](http://blog.otoro.net/2016/03/25/generating-abstract-patterns-with-tensorflow/).
+Generate intensely stimulating images with random neural networks.
 
 ## Arguments
 `python generate.py` takes as arguments:
@@ -22,5 +22,13 @@ Generating Gifs: `python generate.py --frames=10 --name="foo.gif"`
 
 ![alt text](https://github.com/jbial/cppn-pytorch/blob/master/gifs/trip16.gif)
 
-
 Disclaimer: It's in Tensorflow right now, but I will port everything to pytorch soon
+
+## Findings
+* I found the `--scale` and `--z-dim` parameter to have the most impact of visual effects.
+* In general, the scale acts as a "zooming" parameter the image space, and the z dimension acts a frequency parameter of the image features
+
+## Acknowledgement
+
+This project was adapted from [David Ha's amazing blog post](http://blog.otoro.net/2016/03/25/generating-abstract-patterns-with-tensorflow/)
+
