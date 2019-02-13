@@ -1,4 +1,4 @@
-# Compositional Pattern Producing Networks in Pytorch
+# Compositional Pattern Producing Networks in Tensorflow
 Generate high resolution, intensely stimulating images with random neural networks.
 
 ## Arguments
@@ -22,11 +22,10 @@ Generating Gifs: `python generate.py --frames=10 --name="foo.gif"`
 
 ![alt text](https://github.com/jbial/cppn-pytorch/blob/master/gifs/tanhtanh.gif)
 
-Disclaimer: It's in Tensorflow right now, but I will port everything to pytorch soon
 
 ## Experiments
 * I found the `--scale` and `--z-dim` parameter to have the most impact of visual effects.
-* In general, the scale acts as a "zooming" parameter the image space, and the z dimension acts a frequency parameter of the image features
+* In general, the scale acts as a "zooming" parameter in the image space, and the z dimension acts a frequency parameter of generated image features
 
 <p float="left">
   <img src="https://github.com/jbial/cppn-pytorch/blob/master/images/tanhtanh_3.png" width="256" />
