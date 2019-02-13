@@ -29,9 +29,9 @@ Disclaimer: It's in Tensorflow right now, but I will port everything to pytorch 
 * In general, the scale acts as a "zooming" parameter the image space, and the z dimension acts a frequency parameter of the image features
 
 <p float="left">
-  <img src="/tanhtanh_1.png" width="100" />
-  <img src="/img2.png" width="100" /> 
-  <img src="/img3.png" width="100" />
+  <img src="https://github.com/jbial/cppn-pytorch/blob/master/images/tanhtanh_3.png" width="100" />
+  <img src="https://github.com/jbial/cppn-pytorch/blob/master/images/tanhtanh_2.png" width="100" /> 
+  <img src="https://github.com/jbial/cppn-pytorch/blob/master/images/tanhtanh_2.png" width="100" />
 </p>
 
 ## Acknowledgement
