@@ -5,13 +5,16 @@ Generate high resolution, intensely stimulating images with random neural networ
 `python generate.py` takes as arguments:
 * `--im-size`: Size of the image.
 * `--batch-size`: Number of images to generate.
-* `--n-dim`: Number of units per layer.
+* `--units`: Number of units per layer.
 * `--z-dim`: Size of input latent vector.
 * `--layers`: Number of layers in the network.
 * `--channels`: Number of channels in output images.
 * `--scale`: Scaling factor for the images.
 * `--name`: Name of image for saving. Default is None, specify for saving.
 * `--frames`: Number of frames for the gif. Default is None, specify an integer to save a gif file.
+* `--scale-list`: Comma-separated list of scales for the images.
+* `--display-cols`: Number of columns for showing image batches.
+* `--same-z`: Use the same latent vector for all param lists.
 
 ## Usage
 Generating Images: `python generate.py` 
