@@ -16,9 +16,11 @@ Generate intensely stimulating images and gifs with random neural networks adapt
 ## Usage
 Generating Images: `python generate.py` 
 
-![alt text]()
+![alt text](https://github.com/jbial/cppn-pytorch/blob/master/images/img-06-10-01-3.png)
 
 Generating Gifs: `python generate.py --frames=10 --name="foo.gif"`
+
+![alt text](https://github.com/jbial/cppn-pytorch/blob/master/gifs/trip16.gif)
 
 
 Disclaimer: It's in Tensorflow right now, but I will port everything to pytorch soon
