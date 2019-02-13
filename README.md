@@ -14,9 +14,11 @@ Generate intensely stimulating images and gifs with random neural networks adapt
 * `--frames`: Number of frames for the gif. Default is None, specify an integer to save a gif file.
 
 ## Usage
-Generating Images: `python generate.py`
+Generating Images: `python generate.py` 
+
 ![alt text]()
 
 Generating Gifs: `python generate.py --frames=10 --name="foo.gif"`
+
 
 Disclaimer: It's in Tensorflow right now, but I will port everything to pytorch soon
