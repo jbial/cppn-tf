@@ -27,7 +27,7 @@ Generating Gifs: `python generate.py --frames=10 --name="tanhtanh.gif"`
 
 
 ## Experiments
-* I found the `--scale` and `--z-dim` parameter to have the most impact of visual effects.
+* I found the `--scale` and `--z-dim` parameter to have the most impact on visual effects.
 * In general, the scale acts as a "zooming" parameter in the image space, and the z dimension acts a frequency parameter of generated image features
 
 
