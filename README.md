@@ -40,12 +40,12 @@ The effect of exponentially increasing the scale parameter: `--scale-list=1,5,25
   <img src="https://github.com/jbial/cppn-pytorch/blob/master/images/scale_4.jpg" width="200" />
 </p>
 
-The effect of exponentially increasing the z dimension: `--z-dim` from {32,64,128,256}
+The effect of exponentially increasing the z dimension: `--z-dim` from {1,8,64,512}
 <p float="left">
-  <img src="https://github.com/jbial/cppn-pytorch/blob/master/images/z_32.png" width="200" />
-  <img src="https://github.com/jbial/cppn-pytorch/blob/master/images/z_64.png" width="200" /> 
-  <img src="https://github.com/jbial/cppn-pytorch/blob/master/images/z_128.png" width="200" />
-  <img src="https://github.com/jbial/cppn-pytorch/blob/master/images/z_256.png" width="200" />
+  <img src="https://github.com/jbial/cppn-pytorch/blob/master/images/z_1.png" width="200" />
+  <img src="https://github.com/jbial/cppn-pytorch/blob/master/images/z_8.png" width="200" /> 
+  <img src="https://github.com/jbial/cppn-pytorch/blob/master/images/z_64.png" width="200" />
+  <img src="https://github.com/jbial/cppn-pytorch/blob/master/images/z_512.png" width="200" />
 </p>
 
 ## Acknowledgement
