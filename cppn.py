@@ -55,7 +55,7 @@ class CPPN:
         # Forward pass
         h = tf.nn.tanh(self.dense_x(x_input) + self.dense_y(y_input) + self.dense_z(z_input) + self.dense_r(r_input))
         for i in range(self.layers):
-            h = tf.nn.tanh(self._dense(self.units, f'h_{i}')(h))
+            h = tf.cos(self._dense(self.units, f'h_{i}')(h))
         h = tf.nn.sigmoid(self._dense(self.channels, 'out')(h)) 
         return tf.reshape(h, [self.batch_size, self.im_size, self.im_size, self.channels])
 
