@@ -19,7 +19,7 @@ Generate high resolution, intensely stimulating images with random neural networ
 ## Usage
 Generating Images: `python generate.py` 
 
-![alt text](https://github.com/jbial/cppn-pytorch/blob/master/images/tanhtanh_2.png)
+![alt text](https://github.com/jbial/cppn-pytorch/blob/master/images/tanhtanh_3.png)
 
 Generating Gifs: `python generate.py --frames=10 --name="tanhtanh.gif"`
 
@@ -27,8 +27,9 @@ Generating Gifs: `python generate.py --frames=10 --name="tanhtanh.gif"`
 
 
 ## Experiments
-* I found the `--scale` and `--z-dim` parameter to have the most impact on visual effects.
-* In general, the scale acts as a "zooming" parameter in the image space, and the z dimension acts a frequency parameter of generated image features
+* The `--scale` parameter acts as a "zooming" parameter in the image space.
+* The `--z-dim` parameter acts a frequency parameter of generated image features.
+* Both `--units` and `--layers` control the noise level in the generated images, which makes sense since these parameters adjust the number of weights which dictate the 'representational power' of the neural network. Try setting `--layers` or `--units` to 0 and then 64 for yourself.
 
 
 The effect of exponentially increasing the scale parameter: `--scale-list=1,5,25,125`
@@ -37,6 +38,14 @@ The effect of exponentially increasing the scale parameter: `--scale-list=1,5,25
   <img src="https://github.com/jbial/cppn-pytorch/blob/master/images/scale_2.jpg" width="200" /> 
   <img src="https://github.com/jbial/cppn-pytorch/blob/master/images/scale_3.jpg" width="200" />
   <img src="https://github.com/jbial/cppn-pytorch/blob/master/images/scale_4.jpg" width="200" />
+</p>
+
+The effect of exponentially increasing the z dimension: `--z-dim` from {32,64,128,256}
+<p float="left">
+  <img src="https://github.com/jbial/cppn-pytorch/blob/master/images/z_32.png" width="200" />
+  <img src="https://github.com/jbial/cppn-pytorch/blob/master/images/z_64.png" width="200" /> 
+  <img src="https://github.com/jbial/cppn-pytorch/blob/master/images/z_128.png" width="200" />
+  <img src="https://github.com/jbial/cppn-pytorch/blob/master/images/z_256.png" width="200" />
 </p>
 
 ## Acknowledgement
