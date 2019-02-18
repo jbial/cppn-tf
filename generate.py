@@ -37,7 +37,7 @@ def main():
 
     # Get the scale parameter list
     scales = [float(s) for s in args.scale_list.split(',')] if args.scale_list is not None else None
-
+    
     # generate images
     z = model.get_code() if args.same_z else None
     images = [model(
@@ -46,7 +46,7 @@ def main():
     ) for s in scales] if scales else model()
     
     # Show and save images
-    if args.batch_size > 1 or len(scales) > 1:
+    if args.batch_size > 1 or args.scale_list:
         vis.show_images(images, args.display_cols) 
         if args.name: vis.save_images(images, args.name)
     else:

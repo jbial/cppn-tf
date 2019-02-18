@@ -86,7 +86,7 @@ class CPPN:
         self.sess = tf.Session()
         self.sess.run(tf.global_variables_initializer())
 
-    def __call__(self, scale_param, latent_code=None):
+    def __call__(self, scale_param=None, latent_code=None):
         
         # Allow parameter dependent variables to be changed upon calling for experiments
         scale = scale_param if scale_param is not None else self.scale
