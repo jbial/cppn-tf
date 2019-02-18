@@ -24,8 +24,8 @@ Generating Images: `python generate.py`
   <img src="https://github.com/jbial/cppn-pytorch/blob/master/images/tanhtanh_1.png" width="440" /> 
  </p>
  <p float='left'>
-  <img src="https://github.com/jbial/cppn-pytorch/blob/master/images/tanhtanh_2.png" width="256" />
-  <img src="https://github.com/jbial/cppn-pytorch/blob/master/images/tanhcos_2.png" width="256" />
+  <img src="https://github.com/jbial/cppn-pytorch/blob/master/images/tanhtanh_2.png" width="440" />
+  <img src="https://github.com/jbial/cppn-pytorch/blob/master/images/tanhcos_2.png" width="440" />
 </p>
 
 ![alt text](https://github.com/jbial/cppn-pytorch/blob/master/images/random.jpg)
