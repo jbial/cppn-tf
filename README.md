@@ -19,7 +19,16 @@ Generate high resolution, intensely stimulating images with random neural networ
 ## Usage
 Generating Images: `python generate.py` 
 
-![alt text](https://github.com/jbial/cppn-pytorch/blob/master/images/tanhtanh_3.png)
+<p float="left">
+  <img src="https://github.com/jbial/cppn-pytorch/blob/master/images/tanhcos_1.png" width="440" />
+  <img src="https://github.com/jbial/cppn-pytorch/blob/master/images/tanhtanh_1.png" width="440" /> 
+ </p>
+ <p float='left'>
+  <img src="https://github.com/jbial/cppn-pytorch/blob/master/images/tanhtanh_2.png" width="256" />
+  <img src="https://github.com/jbial/cppn-pytorch/blob/master/images/tanhcos_2.png" width="256" />
+</p>
+
+![alt text](https://github.com/jbial/cppn-pytorch/blob/master/images/random.jpg)
 
 Generating Gifs: `python generate.py --frames=10 --name="tanhtanh.gif"`
 
@@ -28,11 +37,11 @@ Generating Gifs: `python generate.py --frames=10 --name="tanhtanh.gif"`
 
 ## Experiments
 * The `--scale` parameter acts as a "zooming" parameter in the image space.
-* The `--z-dim` parameter acts a frequency parameter of generated image features.
+* The `--z-dim` parameter acts a control parameter on the frequency of generated features.
 * Both `--units` and `--layers` control the noise level in the generated images, which makes sense since these parameters adjust the number of weights which dictate the 'representational power' of the neural network. Try setting `--layers` or `--units` to 0 and then 64 for yourself.
 
 
-The effect of exponentially increasing the scale parameter: `--scale-list=1,5,25,125`
+The effect of exponentially increasing the scale parameter (all other params default): `--scale-list=1,5,25,125`
 <p float="left">
   <img src="https://github.com/jbial/cppn-pytorch/blob/master/images/scale_1.jpg" width="200" />
   <img src="https://github.com/jbial/cppn-pytorch/blob/master/images/scale_2.jpg" width="200" /> 
@@ -40,12 +49,12 @@ The effect of exponentially increasing the scale parameter: `--scale-list=1,5,25
   <img src="https://github.com/jbial/cppn-pytorch/blob/master/images/scale_4.jpg" width="200" />
 </p>
 
-The effect of exponentially increasing the z dimension: `--z-dim` from {32,64,128,256}
+The effect of exponentially increasing the z dimension (all other params default): `--z-dim` from {1,8,64,512}
 <p float="left">
-  <img src="https://github.com/jbial/cppn-pytorch/blob/master/images/z_32.png" width="200" />
-  <img src="https://github.com/jbial/cppn-pytorch/blob/master/images/z_64.png" width="200" /> 
-  <img src="https://github.com/jbial/cppn-pytorch/blob/master/images/z_128.png" width="200" />
-  <img src="https://github.com/jbial/cppn-pytorch/blob/master/images/z_256.png" width="200" />
+  <img src="https://github.com/jbial/cppn-pytorch/blob/master/images/z_1.png" width="200" />
+  <img src="https://github.com/jbial/cppn-pytorch/blob/master/images/z_8.png" width="200" /> 
+  <img src="https://github.com/jbial/cppn-pytorch/blob/master/images/z_64.png" width="200" />
+  <img src="https://github.com/jbial/cppn-pytorch/blob/master/images/z_512.png" width="200" />
 </p>
 
 ## Acknowledgement
