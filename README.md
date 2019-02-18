@@ -21,14 +21,14 @@ Generating Images: `python generate.py`
 
 <p float="left">
   <img src="https://github.com/jbial/cppn-pytorch/blob/master/images/tanhtanh_3.png" width="200" />
-  <img src="https://github.com/jbial/cppn-pytorch/blob/master/images/tanhtanh_4.png" width="200" /> 
+  <img src="https://github.com/jbial/cppn-pytorch/blob/master/images/tanhcos_1.png" width="200" /> 
  </p>
  <p float='left'>
-  <img src="https://github.com/jbial/cppn-pytorch/blob/master/images/tanhcos_1.png" width="200" />
+  <img src="https://github.com/jbial/cppn-pytorch/blob/master/images/tanhtanh_2.png" width="200" />
   <img src="https://github.com/jbial/cppn-pytorch/blob/master/images/tanhcos_2.png" width="200" />
 </p>
-![alt text](https://github.com/jbial/cppn-pytorch/blob/master/images/random.jpg)
 
+![alt text](https://github.com/jbial/cppn-pytorch/blob/master/images/random.jpg)
 
 Generating Gifs: `python generate.py --frames=10 --name="tanhtanh.gif"`
 
