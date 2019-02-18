@@ -19,7 +19,16 @@ Generate high resolution, intensely stimulating images with random neural networ
 ## Usage
 Generating Images: `python generate.py` 
 
-![alt text](https://github.com/jbial/cppn-pytorch/blob/master/images/tanhtanh_3.png)
+<p float="left">
+  <img src="https://github.com/jbial/cppn-pytorch/blob/master/images/tanhtanh_3.jpg" width="200" />
+  <img src="https://github.com/jbial/cppn-pytorch/blob/master/images/tanhtanh_4.jpg" width="200" /> 
+ </p>
+ <p float='left'>
+  <img src="https://github.com/jbial/cppn-pytorch/blob/master/images/tanhcos_1.jpg" width="200" />
+  <img src="https://github.com/jbial/cppn-pytorch/blob/master/images/tanhcos_2.jpg" width="200" />
+</p>
+![alt text](https://github.com/jbial/cppn-pytorch/blob/master/images/random.jpg)
+
 
 Generating Gifs: `python generate.py --frames=10 --name="tanhtanh.gif"`
 
