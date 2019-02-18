@@ -32,7 +32,7 @@ Generating Gifs: `python generate.py --frames=10 --name="tanhtanh.gif"`
 * Both `--units` and `--layers` control the noise level in the generated images, which makes sense since these parameters adjust the number of weights which dictate the 'representational power' of the neural network. Try setting `--layers` or `--units` to 0 and then 64 for yourself.
 
 
-The effect of exponentially increasing the scale parameter: `--scale-list=1,5,25,125`
+The effect of exponentially increasing the scale parameter (all other params default): `--scale-list=1,5,25,125`
 <p float="left">
   <img src="https://github.com/jbial/cppn-pytorch/blob/master/images/scale_1.jpg" width="200" />
   <img src="https://github.com/jbial/cppn-pytorch/blob/master/images/scale_2.jpg" width="200" /> 
@@ -40,7 +40,7 @@ The effect of exponentially increasing the scale parameter: `--scale-list=1,5,25
   <img src="https://github.com/jbial/cppn-pytorch/blob/master/images/scale_4.jpg" width="200" />
 </p>
 
-The effect of exponentially increasing the z dimension: `--z-dim` from {1,8,64,512}
+The effect of exponentially increasing the z dimension (all other params default): `--z-dim` from {1,8,64,512}
 <p float="left">
   <img src="https://github.com/jbial/cppn-pytorch/blob/master/images/z_1.png" width="200" />
   <img src="https://github.com/jbial/cppn-pytorch/blob/master/images/z_8.png" width="200" /> 
