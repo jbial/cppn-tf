@@ -20,12 +20,12 @@ Generate high resolution, intensely stimulating images with random neural networ
 Generating Images: `python generate.py` 
 
 <p float="left">
-  <img src="https://github.com/jbial/cppn-pytorch/blob/master/images/tanhcos_1.png" width="200" />
-  <img src="https://github.com/jbial/cppn-pytorch/blob/master/images/tanhtanh_1.png" width="200" /> 
+  <img src="https://github.com/jbial/cppn-pytorch/blob/master/images/tanhcos_1.png" width="512" />
+  <img src="https://github.com/jbial/cppn-pytorch/blob/master/images/tanhtanh_1.png" width="512" /> 
  </p>
  <p float='left'>
-  <img src="https://github.com/jbial/cppn-pytorch/blob/master/images/tanhtanh_2.png" width="200" />
-  <img src="https://github.com/jbial/cppn-pytorch/blob/master/images/tanhcos_2.png" width="200" />
+  <img src="https://github.com/jbial/cppn-pytorch/blob/master/images/tanhtanh_2.png" width="512" />
+  <img src="https://github.com/jbial/cppn-pytorch/blob/master/images/tanhcos_2.png" width="512" />
 </p>
 
 ![alt text](https://github.com/jbial/cppn-pytorch/blob/master/images/random.jpg)
