@@ -40,6 +40,7 @@ Generating Gifs: `python generate.py --frames=10 --name="tanhtanh.gif"`
 * The `--z-dim` parameter acts a control parameter on the frequency of generated features.
 * Both `--units` and `--layers` control the noise level in the generated images, which makes sense since these parameters adjust the number of weights which dictate the 'representational power' of the neural network. Try setting `--layers` or `--units` to 0 and then 64 for yourself.
 
+* There are **_a lot_** of experiments that can be performed. In this case, hyperparameter tuning can be fun!
 
 The effect of exponentially increasing the scale parameter (all other params default): `--scale-list=1,5,25,125`
 <p float="left">
